@@ -6,11 +6,11 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "npm install && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run dev",
-    "deploy" : "gh-pages -d dist"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.0.7",
@@ -32,5 +32,8 @@
     "gh-pages": "^6.3.0",
     "globals": "^15.14.0"
 
+  },
+  "engines": {
+  "node": "18.x"
   }
 }
